@@ -25,6 +25,7 @@ group :test do
   gem 'turn', '0.8.2', :require => false
   gem 'rspec-rails', '2.8.1'
   gem 'capybara', '1.1.2'
+  gem 'rb-fsevent', '0.4.3.1', :require => false
 end
 
 group :production do
