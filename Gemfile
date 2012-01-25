@@ -28,6 +28,8 @@ group :test do
   gem 'rspec-rails', '2.8.1'
   gem 'capybara', '1.1.2'
   #gem 'rb-fsevent', '0.4.3.1', :require => false
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :production do
