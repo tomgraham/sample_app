@@ -1,4 +1,8 @@
 SampleApp::Application.configure do
+  
+  # per http://stackoverflow.com/questions/7300532/blueprint-css-rails-3-1-help
+  #config.assets.precompile += %w( blueprint/screen.css blueprint/print.css )
+  
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -15,7 +19,8 @@ SampleApp::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  # Really should be false, just changing to true to test
+  config.assets.compile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
