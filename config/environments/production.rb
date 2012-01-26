@@ -1,7 +1,8 @@
 SampleApp::Application.configure do
   
   # per http://stackoverflow.com/questions/7300532/blueprint-css-rails-3-1-help
-  #config.assets.precompile += %w( blueprint/screen.css blueprint/print.css )
+  # Blueprint will run on Heroku with this commented out
+  config.assets.precompile += %w( blueprint/screen.css blueprint/print.css )
   
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -20,7 +21,8 @@ SampleApp::Application.configure do
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   # Really should be false, just changing to true to test
-  config.assets.compile = true
+  # Blueprint runs on Heroku when set to true.
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
